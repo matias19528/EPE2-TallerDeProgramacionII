@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+	<!--llamada del ccs y link para regresar a la pagina anterior-->
+	<link href="formularios.css" rel="stylesheet" type="text/css">
+	&nbsp;&nbsp;&nbsp;<a href="Utilidades.php">Regresar</a><hr>
+</head>
+
+<body>
+	<!--formulario para ingresar las ganancias-->
+		<form method="post" action="ingresarGanancias.php">
+			<h1>INGRESO DE GANANCIAS</h1>
+		<div>
+			Descripcion: <input type="text" name="Descripcion" placeholder="ingresar..." required>
+		</div>
+		<div>
+			Gasto Previsto: <input type="number" name="PrecioPrevisto" placeholder="ingresar..." required>
+		</div>
+		<div>
+			Gasto Real: <input type="number" name="PrecioReal" placeholder="ingresar..." required>
+		</div>
+		<div>
+			Diferencia: <input type="number" name="Diferencia" placeholder="ingresar..." required>
+		</div>
+		<button type="submit">Ingresar</button>
+		</form>
+</body>
+</html>

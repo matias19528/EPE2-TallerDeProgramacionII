@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+	<!--llamada del ccs y link para regresar a la pagina anterios-->
+	<link href="formularios.css" rel="stylesheet" type="text/css">
+	&nbsp;&nbsp;&nbsp;<a href="Utilidades.php">Regresar</a><hr>
+</head>
+
+<body>
+	<!--formulario para eliminar los gastos-->
+		<form method="post" action="eliminarGastos.php">
+			<h1>ELIMINAR GASTOS</h1>
+		<div>
+			Item: <input type="number" name="Item" placeholder="ingresar..." required>
+		</div>
+		<button type="submit" name="eliminar">Eliminar</button>
+		</form>
+</body>
+</html>

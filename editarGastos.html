@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+	<!--llamada del ccs y link para regresar a la pagina-->
+	<link href="formularios.css" rel="stylesheet" type="text/css">
+	&nbsp;&nbsp;&nbsp;<a href="Utilidades.php">Regresar</a><hr>
+</head>
+
+<body>
+	<!--formulario para editar los gastos-->
+		<form method="post" action="editarGastos.php">
+		<h1>EDITAR GASTOS</h1>
+		<div>
+			Item: <input type="number" name="Item" placeholder="ingresar..." required>
+		</div>
+		<div>
+			Descripcion: <input type="text" name="Descripcion" placeholder="ingresar..." required>
+		</div>
+		<div>
+			Gasto Previsto: <input type="number" name="PrecioPrevisto" placeholder="ingresar..." required>
+		</div>
+		<div>
+			Gasto Real: <input type="number" name="PrecioReal" placeholder="ingresar..." required>
+		</div>
+		<div>
+			Diferencia: <input type="number" name="Diferencia" placeholder="ingresar..." required>
+		</div>
+		<button type="submit" name="editar">Editar</button>
+		</form>
+</body>
+</html>

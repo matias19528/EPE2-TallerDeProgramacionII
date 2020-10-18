@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <!--llamar al ccs login.css-->
+    <link href="login.css" rel="stylesheet" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+	  <!--creacion de los titulos del login-->
+    <div class="wrapper">
+      <div class="title-text">
+        <div class="title login">
+Iniciar Sesion</div>
+<div class="title signup">
+Crear Usuario</div>
+</div>
+<div class="form-container">
+        <div class="slide-controls">
+          <input type="radio" name="slide" id="login" checked>
+          <input type="radio" name="slide" id="signup">
+          <label for="login" class="slide login">Iniciar Sesion</label>
+          <label for="signup" class="slide signup">Crear Usuario</label>
+          <div class="slider-tab">
+</div>
+</div>
+<!--creacion de form para crear usuarios y para hacer el login-->
+<div class="form-inner">
+	<form method="post" action="controlarusuario.php" class="login">
+        <div class="field">
+        	<input type="text" placeholder="Email" required name="mail">
+        </div>
+		<div class="field">
+            <input type="password" placeholder="Password" required name="contrasena">
+        </div>
+		<div class="field btn">
+            <div class="btn-layer">
+			</div>
+		<input type="submit" value="login">
+        </div>
+		<div class="signup-link">
+		No tiene Usuario? <a href="">Crear Usuario Ahora</a></div>
+	</form>
+<form action="insert.php" class="signup">
+            <div class="field">
+              <input type="text" placeholder="Nombre" required name="nombre">
+            </div>
+			<div class="field">
+              <input type="text" placeholder="Email" required name="mail">
+            </div>
+			<div class="field">
+              <input type="password" placeholder="Password" required name="contrasena">
+            </div>
+			<div class="field btn">
+            	<div class="btn-layer">
+				</div>
+				<input type="submit" value="Crear">
+            </div>
+</form>
+</div>
+</div>
+</div>
+<script>
+      const loginText = document.querySelector(".title-text .login");
+      const loginForm = document.querySelector("form.login");
+      const loginBtn = document.querySelector("label.login");
+      const signupBtn = document.querySelector("label.signup");
+      const signupLink = document.querySelector("form .signup-link a");
+      signupBtn.onclick = (()=>{
+        loginForm.style.marginLeft = "-50%";
+        loginText.style.marginLeft = "-50%";
+      });
+      loginBtn.onclick = (()=>{
+        loginForm.style.marginLeft = "0%";
+        loginText.style.marginLeft = "0%";
+      });
+      signupLink.onclick = (()=>{
+        signupBtn.click();
+        return false;
+      });
+    </script>
+
+  </body>
+</html>
+

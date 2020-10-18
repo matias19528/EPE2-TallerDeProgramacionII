@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+	<!--html contacto zona de menu -->
+    <title>Mail Form</title>
+    <link rel="stylesheet" type="text/css" href="estiloContacto.css">
+	&nbsp;&nbsp;&nbsp;<a href="Utilidades.php">Utilidades</a>&nbsp;&nbsp;&nbsp;
+	<a href="listaproducto.php">Lista de Productos</a>&nbsp;&nbsp;&nbsp;
+	<a href="contacto.html">Contacto</a>&nbsp;&nbsp;&nbsp;
+	<a href="login.html">Cerrar Sesion</a><br><hr>
+</head>
+<body>
+	<!-- se llama al contacto.php para poder hacer la solucion-->
+<form action="contacto.php" method="POST">
+    <h1 style="text-align: center">CONTACTO</h1><br>
+    <input type="text" class="name" placeholder="nombre" name="nombre" required>
+    <input type="mail" class="email" placeholder="su e-mail" name="mail" required> 
+    <input type="text" class="message" placeholder="asunto" name="asunto" required>
+    <textarea placeholder="mensaje" name="mensaje" required></textarea>
+    <button type="submit">ENVIAR</button>
+</form>
+</body>
+</html>
